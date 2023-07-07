@@ -22,12 +22,12 @@ const Row = styled.div`
 `;
 
 const ImageContainer = styled(Container)`
-  flex-direction: row;
   background-image: url(${(props) => props.img});
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
   transform: ${(props) => props.transform};
+  justify-content: flex-start;
 `;
 
 const Column = styled.div`
@@ -39,4 +39,11 @@ const Column = styled.div`
   height: ${(props) => (props.height ? props.height : "auto")};
 `;
 
-export { Container, Row, ImageContainer, Column };
+const ContentContainer = styled(Row)`
+  height: calc(100% - 60px) !important;
+  max-width: 100vw !important;
+  margin: 0;
+  flex-direction: column;
+`;
+
+export { Container, Row, ImageContainer, Column, ContentContainer };

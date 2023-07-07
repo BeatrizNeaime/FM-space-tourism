@@ -1,8 +1,10 @@
 import React from "react";
-import HomeView from "../views/HomeView";
+import HomeViewDesktop from "../views/desktop/HomeView";
+import useMediaQuery from '../hooks/useMediaQuery'
 
 const Home = () => {
-  return <HomeView />;
+  const desktop = useMediaQuery("(min-width: 768px)");
+    return desktop ? <HomeViewDesktop /> : ""
 };
 
 export default Home;
