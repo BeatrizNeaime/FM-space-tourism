@@ -4,7 +4,7 @@ import { TitleNumber, TitleText } from "./style";
 
 const PageStep = ({ num, text }) => {
   return (
-    <Row  width={"auto"} style={{ gap: "10px", margin: "0 2rem"}}>
+    <Row width={"100%"} style={{ gap: "10px", justifyContent: "flex-start"}} >
       <TitleNumber>{num}</TitleNumber>
       <TitleText>{text}</TitleText>
     </Row>

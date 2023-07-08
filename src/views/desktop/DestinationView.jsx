@@ -20,12 +20,9 @@ const DestinationViewDesktop = () => {
       <ImageContainer img={require("../../assets/img/01-bg.png")}>
         <Navbar active={"Destination"} />
         <ContentContainer width={"100%"} style={{ alignItems: "flex-start" }}>
-          <Row style={{justifyContent: "flex-start"}} >
-            <PageStep num={"01"} text={"pick your destination"} />
-          </Row>
-
           <Row>
-            <Column width={"50%"} style={{ gap: "3rem" }}>
+            <Column width={"60%"} style={{ gap: "3rem" }}>
+              <PageStep num={"01"} text={"pick your destination"} />
               <DestinationImage img={destination} />
             </Column>
             <Column width={"40%"}>

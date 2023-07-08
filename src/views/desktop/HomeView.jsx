@@ -12,7 +12,7 @@ import {
 const HomeViewDesktop = () => {
   return (
     <Container>
-      <ImageContainer img={require("../../assets/img/home-bg.png")}>
+      <ImageContainer img={require("../../assets/img/00-bg.png")}>
         <Navbar active={"Home"} />
         <ContentContainer width={"100%"}>
           {/* LEFT SIDE */}

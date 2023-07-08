@@ -11,7 +11,7 @@ const DestinationInfos = () => {
   const { destination } = useContext(destinationContext);
 
   return (
-    <Column width={"70%"}>
+    <Column width={"60%"}>
       <Row style={{marginBottom: "1rem"}} >
         {dest.map((d) => {
           return <List name={d} />;
